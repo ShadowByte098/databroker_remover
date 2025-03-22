@@ -1,6 +1,13 @@
 {
-  "crons": [{
-    "path": "/api/deleteOldUsers",
-    "schedule": "1 0 * * *"
-  }]
+  "functions": {
+    "api/**": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "crons": [
+    {
+      "path": "/api/deleteOldUsers",
+      "schedule": "1 0 * * *"
+    }
+  ]
 }
